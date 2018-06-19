@@ -177,7 +177,9 @@ exec xautolock -time 10 -locker "~/scripts/i3lock-fancy/lock -f Source-Code-Pro"
 
 
 # Set border and gets rid of titlebar
-default_border pixel 3
+default_border pixel 1
+
+hide_edge_borders smart
 
 # back_and_forth
 bindsym $mod+b workspace back_and_forth
@@ -200,3 +202,7 @@ assign [class="^spotify$"] → $ws6
 #exec --no-statupp-id i3-msg "workspace $ws3; exec firefox; workspace $ws1"
 
 exec_always --no-startup-id feh --bg-fill $HOME/pictures/wallpapers/CURRENT_WALLPAPER
+
+# Set border colors
+#<colorclass>           <border> <background> <text>   <indicator> <child_border>
+client.focused          #4c7899  #285577      #ffffff  #2e9ef4     #9e8c00
