@@ -95,3 +95,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -alh --color=auto"
+alias gitlogs="for i in \$(git log --oneline | head -n 6 | awk '{print \$1}'); do printdate \"Git rev: \$i\"; git show \$i; done"
+
+#alias gitshow="for i in $(git log --oneline | head -n 6 | awk '{print $1}'); do printdate 'Git rev: $i'; git show $i; done"
+#eval $(keychain --eval --quiet id_rsa ~/.ssh/work_key)
+eval $(keychain --eval --quiet --confhost --noask --timeout 900)

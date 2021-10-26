@@ -193,6 +193,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Recommended to match based on class
 #WM_CLASS(STRING) = "{instance}", "{class}"
 #WM_CLASS(STRING) = "Mail", "Thunderbird"
+#assign [class="^firefox$"] → $ws3
+assign [class="^slack$"] → $ws4
 assign [class="^yakyak$"] → $ws4
 assign [class="^Thunderbird$"] → $ws4
 assign [class="^spotify$"] → $ws6
@@ -202,6 +204,8 @@ assign [class="^spotify$"] → $ws6
 #exec --no-statupp-id i3-msg "workspace $ws3; exec firefox; workspace $ws1"
 
 exec_always --no-startup-id feh --bg-fill $HOME/pictures/wallpapers/CURRENT_WALLPAPER
+
+#exec_always --no-startup-id start-pulseaudio-x11
 
 # Set border colors
 #<colorclass>           <border> <background> <text>   <indicator> <child_border>

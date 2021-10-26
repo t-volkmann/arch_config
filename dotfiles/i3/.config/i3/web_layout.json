@@ -1,0 +1,47 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1403,
+       "width": 1718,
+       "x": 842,
+       "y": 1477
+    },
+    "name": "New Tab - Mozilla Firefox",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^firefox$",
+       "instance": "^Navigator$",
+       // "title": "^New\\ Tab\\ \\-\\ Mozilla\\ Firefox$",
+       "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1405,
+       "width": 3440,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Mozilla Firefox",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^firefox$",
+       "instance": "^Navigator$",
+       // "title": "^Mozilla\\ Firefox$",
+       "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
